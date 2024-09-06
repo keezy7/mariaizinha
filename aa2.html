@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUAU</title>
+  <style>
+    body {
+      background-color: black; /* Fundo preto */
+      color: white;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh; /* Ocupa a altura total da tela */
+    }
+
+    /* Texto piscando */
+    @keyframes piscar {
+      0% { opacity: 1; color: red; }
+      50% { opacity: 0; color: blue; }
+      100% { opacity: 1; color: green; }
+    }
+
+    .piscando {
+      font-size: 2em;
+      text-align: center;
+      animation: piscar 1.0s infinite; /* Piscando rápido */
+    }
+
+    /* Espaço para imagem no meio */
+    .imagem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .imagem img {
+      max-width: 100%;
+      max-height: 300px; /* Limite de altura para a imagem */
+    }
+
+    /* Texto grande no rodapé */
+    .rodape {
+      font-size: 2.5em;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* Seção lateral para GIFs */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .gifs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 60px;
+      max-width: 500px;
+    }
+
+    .gifs img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Texto piscando no topo -->
+  <div class="piscando">
+    VOCE EH A PESSOA MAIS LINDA QUE CONHEÇO
+  </div>
+
+  <!-- Espaço para a imagem no meio -->
+  <div class="container">
+    <div class="imagem">
+      <img src="file:///home/keezy/%C3%81rea%20de%20trabalho/brincadeiras%20em%20html01/MAH.png" alt="Imagem aqui">
+    </div>
+
+    <!-- Seção lateral para GIFs -->
+    <div class="gifs">
+      <img src="https://media.tenor.com/0XSg3Cc9ao8AAAAj/carl-and-shaggy-jamin-dance.gif" alt="GIF 1">
+      <img src="https://media.tenor.com/fk7XKKnaxzoAAAAj/emojify.gif" alt="GIF 2">
+      <img src="https://media.tenor.com/I3vozcxzrdAAAAAj/cute-love.gif" alt="GIF 3">
+    </div>
+  </div>
+
+  <!-- Texto grande no rodapé -->
+  <div class="rodape">
+    EH UM AMOR DE PESSOA, MARAVILHOSAAAAA
+  </div>
+
+
+  <a href="https://www.youtube.com/watch?v=izGwDsrQ1eQ">
+    <button class="botao">ENTRE AQUI</button>
+  </a>
+
+</body>
+</html>
